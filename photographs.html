@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographs - Liberation War Archive</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Lightbox CSS for image zoom functionality -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+   <!-- Navigation Bar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container" style="max-width: 1250px;">
+        <a class="navbar-brand" href="#">Liberation War Archive</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="documrnts.html">Documents</a></li>
+            <li class="nav-item"><a class="nav-link" href="interviews.html">Interviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="photographs.html">Photographs</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+    <!-- Gallery Section -->
+    <section class="container mt-5" style="max-width: 1250px;">
+        <h2 class="mb-4">Photographs of the Liberation War</h2>
+        <p>Explore a collection of historical photographs capturing significant moments, places, and people from the Liberation War of Bangladesh. Each image offers a glimpse into the past and a chance to reflect on the monumental events that shaped the nation's history.</p>
+
+        <!-- Category Filters -->
+        <div class="mb-4">
+            <button class="btn btn-primary mr-2" onclick="filterGallery('all')">All</button>
+            <button class="btn btn-outline-primary mr-2" onclick="filterGallery('events')">Events</button>
+            <button class="btn btn-outline-primary mr-2" onclick="filterGallery('locations')">Locations</button>
+            <button class="btn btn-outline-primary mr-2" onclick="filterGallery('people')">People</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row" id="gallery-grid">
+            <!-- Photo 1 (Event) -->
+            <div class="col-md-4 mb-4 gallery-item events">
+                <a href="assets/images/Surrender.jfif" data-lightbox="gallery" data-title="Liberation War Rally - 1971">
+                    <img src="assets/images/001.jpg" class="img-fluid Photographs" alt="Liberation War Rally">
+                </a>
+                <p class="text-center mt-2">Liberation War Rally - 1971</p>
+                <a href="assets/images/Surrender.jfif" class="btn btn-outline-primary btn-block" download>Download</a>
+            </div>
+
+            <!-- Photo 2 (Location) -->
+            <div class="col-md-4 mb-4 gallery-item locations">
+                <a href="images/photo2-highres.jpg" data-lightbox="gallery" data-title="Independence Monument, Dhaka">
+                    <img src="assets/images/002.jfif" class="img-fluid Photographs" alt="Independence Monument">
+                </a>
+                <p class="text-center mt-2">Independence Monument, Dhaka</p>
+                <a href="images/photo2-highres.jpg" class="btn btn-outline-primary btn-block" download>Download</a>
+            </div>
+
+            <!-- Photo 3 (People) -->
+            <div class="col-md-4 mb-4 gallery-item people">
+                <a href="images/photo3-highres.jpg" data-lightbox="gallery" data-title="Freedom Fighters">
+                    <img src="assets/images/003.webp" class="img-fluid Photographs" alt="Freedom Fighters">
+                </a>
+                <p class="text-center mt-2">Freedom Fighters</p>
+                <a href="images/photo3-highres.jpg" class="btn btn-outline-primary btn-block" download>Download</a>
+            </div>
+
+            <!-- Photo 4 (Event) -->
+            <div class="col-md-4 mb-4 gallery-item events">
+                <a href="images/photo4-highres.jpg" data-lightbox="gallery" data-title="Declaration of Independence">
+                    <img src="assets/images/004.jfif" class="img-fluid Photographs" alt="Declaration of Independence">
+                </a>
+                <p class="text-center mt-2">Declaration of Independence</p>
+                <a href="images/photo4-highres.jpg" class="btn btn-outline-primary btn-block" download>Download</a>
+            </div>
+
+            <!-- Photo 5 (Location) -->
+            <div class="col-md-4 mb-4 gallery-item locations">
+                <a href="images/photo5-highres.jpg" data-lightbox="gallery" data-title="Liberation War Battlefield">
+                    <img src="assets/images/005.jpeg" class="img-fluid Photographs" alt="Liberation War Battlefield">
+                </a>
+                <p class="text-center mt-2">Liberation War Battlefield</p>
+                <a href="images/photo5-highres.jpg" class="btn btn-outline-primary btn-block" download>Download</a>
+            </div>
+
+            <!-- Photo 6 (People) -->
+            <div class="col-md-4 mb-4 gallery-item people">
+                <a href="images/photo6-highres.jpg" data-lightbox="gallery" data-title="Civilian Protesters">
+                    <img src="assets/images/006.jfif" class="img-fluid Photographs" alt="Civilian Protesters">
+                </a>
+                <p class="text-center mt-2">Civilian Protesters</p>
+                <a href="images/photo6-highres.jpg" class="btn btn-outline-primary btn-block" download>Download</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2024 Liberation War Archive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Lightbox JS for zoom functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- Custom JS for gallery filtering -->
+    <script>
+        function filterGallery(category) {
+            var items = document.getElementsByClassName('gallery-item');
+            for (var i = 0; i < items.length; i++) {
+                if (category === 'all' || items[i].classList.contains(category)) {
+                    items[i].style.display = 'block';
+                } else {
+                    items[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
